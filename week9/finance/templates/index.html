@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Name</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Price</th>
+                <th scope="col">TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in portfolio %}
+                <tr>
+                    <td>{{ item.symbol }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.shares }}</td>
+                    <td>${{ "%.2f"|format(item.price) }}</td>
+                    <td>${{ "%.2f"|format(item.total) }}</td>
+                    <!--  colonne Add for short Actions -->
+                    <td>
+                        <a href="/buy?symbol={{ item.symbol }}" class="btn btn-sm btn-success">Buy</a>
+                        <a href="/sell?symbol={{ item.symbol }}" class="btn btn-sm btn-danger">Sell</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            <!-- Row for Cash Balance -->
+            <tr>
+                <td colspan="4" class="text-end fw-bold">Cash</td>
+                <td>${{ "%.2f"|format(cash) }}</td>
+                <td></td> <!-- sater khawi bach n-9ado l-columns count -->
+            </tr>
+            <!-- Row for Grand Total Portfolio Value -->
+            <tr>
+                <td colspan="4" class="text-end fw-bold">TOTAL</td>
+                <td class="fw-bold">${{ "%.2f"|format(total) }}</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

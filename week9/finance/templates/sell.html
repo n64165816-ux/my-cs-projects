@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+    <form action="/sell" method="post">
+        <!-- 1. Dropdown for Owned Stock Symbols -->
+        <div class="mb-3">
+            <select class="form-select mx-auto w-auto" name="symbol" required>
+                <option disabled selected value="">Symbol</option>
+                {% for stock in stocks %}
+                    <option value="{{ stock.symbol }}" {% if stock.symbol == request.args.get('symbol') %}selected{% endif %}>{{ stock.symbol }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <!-- 2. Input for Number of Shares to Sell -->
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" min="1" name="shares" placeholder="Shares" type="number" required>
+        </div>
+
+        <!-- Submit Button -->
+        <button class="btn btn-primary" type="submit">Sell</button>
+    </form>
+{% endblock %}
