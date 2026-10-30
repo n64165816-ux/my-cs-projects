@@ -1,5 +1,5 @@
 # INVENTORY MANAGER (GESTIONNAIRE DE STOCK)
-#### Video Demo: [HOTT HNA L-LINK DYAL VIDEO DYALK LI GHADI T-UPLOADI F YOUTUBE AW LOOM]
+#### Video Demo: [in progress !!]
 #### Description:
 
 This project is a Command-Line Inventory Management System built completely in C. It allows users to track products, check quantities, manage prices, and dynamically update items.
