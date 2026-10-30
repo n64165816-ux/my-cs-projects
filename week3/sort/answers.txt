@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: if we give them a big file Bubble sort much faster than selection sort
+
+sort2 uses: Merge Sort
+
+How do you know?: Significantly faster than both bubble sort and selection sort.
+
+sort3 uses: Selection Sort
+
+How do you know?: Selection sort  still needs more time even if the file is in sorted.
