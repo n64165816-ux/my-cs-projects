@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Color Changer</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease; /* Smooth color transition */
+        }
+
+        .button-container {
+            display: flex;
+            gap: 15px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Button standard colors */
+        .btn-red { background-color: #99ff99; }
+        .btn-green { background-color: #99ff99; }
+        .btn-blue { background-color: #99ff99; }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Click a button to change the background</h1>
+
+    <div class="button-container">
+        <button class="btn-red" onclick="changeColor('#ff4d4d')">R</button>
+        <button class="btn-green" onclick="changeColor('#2ecc71')">G</button>
+        <button class="btn-blue" onclick="changeColor('#3498db')">B</button>
+    </div>
+
+    <script>
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+
+</body>
+</html>

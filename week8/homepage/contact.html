@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+      integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet" />
+    <title>NOVA</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>NOVA</h1>
+      <nav>
+        <label class="theme-switch">
+          <input type="checkbox" id="darkModeToggle">
+          <span class="slider"></span>
+        </label>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./live.html">Live</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Contact</h1>
+        <p>You can contact us by emailing to this Email Adress:</p>
+        <br />
+        <u><em>nova@harvard.com</em></u>
+
+      </section>
+    </main>
+    <footer>Copyright &#169; Nova.Harvard CS50 2026</footer>
+    <script>
+      const toggle = document.getElementById('darkModeToggle');
+      if (toggle) { // Sécurité pour éviter les erreurs
+        toggle.addEventListener('change', function () {
+          if (this.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.removeAttribute('data-theme');
+          }
+        });
+      }
+    </script>
+  </body>
+
+</html>

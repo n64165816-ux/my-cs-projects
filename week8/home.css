@@ -1,0 +1,30 @@
+.centered
+{
+    text-align: center;
+}
+
+.large
+{
+    font-size: large;
+}
+
+.medium
+{
+    font-size: medium;
+}
+
+.small
+{
+    font-size: small;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Makes the body take up the full screen height */
+    margin: 0;
+}
+
+main {
+    flex: 1; /* Pushes the footer down by taking up all available space */
+}

@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+      integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet" />
+    <title>NOVA</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>NOVA</h1>
+      <nav>
+        <label class="theme-switch">
+          <input type="checkbox" id="darkModeToggle">
+          <span class="slider"></span>
+        </label>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./live.html">Live</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img
+                src="https://images.unsplash.com/photo-1791395275735-82660050e797?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDE%3D"
+                class="d-block mx-lg-auto img-fluid circle-photo" alt="Bootstrap Themes" width="700" height="300"
+                loading="lazy" />
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                NOVA Equipment Service & Repair
+              </h1>
+              <p class="lead">
+                At NOVA Machinery, we combine extensive industry experience with
+                small-town values and personal service. Our strong local and
+                nationwide customer base is built on honesty, product knowledge,
+                and fair pricing.
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="./about.html">
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                    My Story
+                  </button>
+                </a </div>
+              </div>
+            </div>
+          </div>
+          <div class="container px-4 py-5" id="hanging-icons">
+            <h2 class="pb-2 border-bottom">Nova Tchnology</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+              <div class="col d-flex align-items-start">
+                <div
+                  class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                    <use xlink:href="#tools"></use>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="fs-2 text-body-emphasis">Agriculture Equipment</h3>
+                  <p>It's not a concept. It's real. Technology takes everything you love about an 8R
+                    tractor and gives you the option to run it with or without an operator.</p> <a
+                    href="./agriculture_equ.html" class="btn btn-primary">
+                    Gallery Agriculture
+                  </a>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div
+                  class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                    <use xlink:href="#tools"></use>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="fs-2 text-body-emphasis">Construction Equipment</h3>
+                  <p>When you buy NOVA Equipment, you get more than just a machine. You get the digital tools and
+                    insights you need to run your business. </p> <a href="./imges/constriction.png"
+                    class="btn btn-primary">
+                    Gallery Construction
+                  </a>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div
+                  class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                  <svg class="bi" width="1em" height="1em" aria-hidden="true">
+                    <use xlink:href="#tools"></use>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="fs-2 text-body-emphasis">Dairy Solutions & Support</h3>
+                  <p>Dairy farmers face many challenges. We stand ready to
+                    help with our unrivaled network of support and portfolio of products and solutions.</p> <a
+                    href="./contact.html" class="btn btn-primary">
+                    Support
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+    <footer>Copyright &#169; Nova.Harvard CS50 2026</footer>
+    <script>
+      const toggle = document.getElementById('darkModeToggle');
+      if (toggle) { // Sécurité pour éviter les erreurs
+        toggle.addEventListener('change', function () {
+          if (this.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.removeAttribute('data-theme');
+          }
+        });
+      }
+    </script>
+  </body>
+
+</html>

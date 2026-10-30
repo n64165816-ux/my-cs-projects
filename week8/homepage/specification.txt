@@ -1,0 +1,49 @@
+CS50 WEEK 8 - HOMEPAGE PROJECT :
+
+Project Name: NOVA Machinery & Equipment
+
+Year: 2026
+
+1. STRUCTURE & HTML TAGS USED
+
+index.html :
+tags :
+- <!doctype html> & <html lang="en">: Standard document declarations.
+- <head>
+- <body>
+- <header>
+- <nav>
+- <main>
+- <section>
+- <div>
+- <h1>, <h2>, <h3>
+- <p>
+- <a>
+- <button>
+- <label> & <input>
+- <span>
+- <img>
+- <svg> & <use>
+- <footer>
+- <script>
+
+2. STYLE & CSS ARCHITECTURE
+
+The styles.css layout implementation layers personalized visual guidelines alongside Bootstrap's library:
+- Root Variables (`:root` & `[data-theme="dark"]`): Configured custom state dynamic colors for backgrounds and standard typographic tones.
+- Typography: Declared global fallback font architectures ensuring cross-platform stability.
+- Custom Classes:
+  * `.theme-switch` & `.slider`: Configured relative slider switch bounds, styling rounded control tokens, hidden inputs, and animation transforms.
+  * `.circle-photo`: Shaped raw dynamic images into fluid circular presentation formats.
+- Framework Cascade: Overrode standard component attributes via layout overrides while maintaining theme continuity across both viewport modes.
+
+3. BEHAVIOR & JAVASCRIPT MECHANICS
+
+A lightweight inline script coordinates the responsive dark mode operations efficiently:
+- Event Listeners: Attached change tracking metrics onto the '#darkModeToggle' target checkbox structure.
+- DOM Manipulation: Dynamically reads the toggle parameter state on interaction.
+- State Persistence: Injects or removes the custom custom global attribute [data-theme="dark"] onto the primary document root structure (`document.documentElement`).
+- Immediate Adaptation: Triggers CSS cascade changes instantaneously, transforming root color states across the application layers without page updates.
+
+4. BOOTSTRAP DESIGN IMPLEMENTATION
+
